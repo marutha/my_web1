@@ -50,4 +50,4 @@ login_form() ->
                  ]}.
 
 event(login) ->
-    io:fwrite("something~p~n", [wf:q(username)]).
+    io:fwrite("something~p~p~n", [wf:q(username), wf:q(password)]).

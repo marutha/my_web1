@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="static/css/animate.css">
 </head>
 <body>
+<script> {{script}} </script>
 <script src='/n2o/protocols/bert.js'></script>
 <script src='/n2o/protocols/client.js'></script>
 <script src='/n2o/protocols/nitrogen.js'></script>
@@ -14,7 +15,6 @@
 <script src='/n2o/utf8.js'></script>
 <script src='/n2o/template.js'></script>
 <script src='/n2o/n2o.js'></script>
-<script>{{script}}</script>
 {{javascript}}
 <script>protos = [ $bert, $client  ]; N2O_start();</script>
 {{ body }}
