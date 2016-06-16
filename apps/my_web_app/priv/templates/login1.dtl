@@ -1,0 +1,17 @@
+<div id="login_menu">
+<div class="row">
+    <div class="Absolute-Center is-Responsive">
+        <div id="logo-container"></div>
+        <div class="col-ms-12 col-md-10 col-md-offset-1">
+            <form id="loginForm" action="login" method="post">
+                <div id="login_info">Welcome to my app</div>
+                <div class="form-group input-group"><input class="form-control" id="username" name="username" type="text" placeholder="username"/><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span></div>
+                <div class="form-group input-group"><input class="form-control" id="password" name="password" type="password" placeholder="password"/><span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span></div>
+                <div class="checkbox"><label><input type="checkbox">I agree to the <a id="auto-423487" href="#">Terms and Conditions</a></input></label></div>
+                <div class="form-group"><button id="loginButton" type="button" class="btn btn-def btn-block animated bounceIn">Login</button></div>
+                <div class="form-group text-center"><a id="auto-423479" href="#">Forgot Password</a></div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>

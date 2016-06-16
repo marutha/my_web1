@@ -1,0 +1,13 @@
+<div id="menu" class="menu">
+	<div id="a-view" class="a-view">
+		<div id="logo" class="content col-sm-2">
+			Logo
+		</div>
+		<div id="calendar" class="content col-sm-1">
+			Calendar
+		</div>
+		<div id="profile" class="content col-sm-8">
+			Profile
+		</div>
+	</div>
+</div>

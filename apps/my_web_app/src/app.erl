@@ -5,7 +5,7 @@
 
 main() ->
     User = wf:user(),
-    io:fwrite("~p~n", [User]),
+    io:fwrite("User: ~p~n", [User]),
     case User of
         <<>> -> wf:redirect("/login");
         undefined -> wf:redirect("/login");
