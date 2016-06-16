@@ -15,4 +15,6 @@ route_prefix(P) -> route(P).
 
 route(<<"my_template">>) -> my_template;
 route(<<"login">>) -> login;
+route(<<"main">>) -> main;
+route(<<"app">>) -> app;
 route(_) -> my_index.

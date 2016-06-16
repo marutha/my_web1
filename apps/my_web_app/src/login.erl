@@ -21,7 +21,8 @@ login_form_class() -> <<"col-ms-12 col-md-10 col-md-offset-1">>.
 login_form() ->
     #form{action = <<"login">>, id= <<"loginForm">>, method = "post",
           postback = login, source = [username, password],
-          body = [#'div'{class = <<"form-group input-group">>,
+          body = [#'span'{id = "login_info"},
+                  #'div'{class = <<"form-group input-group">>,
                          body = [#'input'{class = <<"form-control">>, type = <<"text">>,
                                           name = <<"username">>, placeholder = <<"username">>,
                                           id = username},
@@ -50,4 +51,13 @@ login_form() ->
                  ]}.
 
 event(login) ->
-    io:fwrite("something~p~p~n", [wf:q(username), wf:q(password)]).
+    User = wf:q(username),
+    Pass = wf:q(password),
+    if User == Pass ->
+           wf:user(User),
+           wf:redirect("app");
+       true ->
+           wf:update(login_info, #span{id = login_info,
+                                       body= #b{body = <<"Invalid username password">>},
+                                       class = <<"animated shake">>})
+    end.
