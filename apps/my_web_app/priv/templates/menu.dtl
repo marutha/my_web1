@@ -1,13 +1,88 @@
+<div class="container-fluid">
 <div id="menu" class="menu">
+    <div class="row">
 	<div id="a-view" class="a-view">
-		<div id="logo" class="content col-sm-2">
-			Logo
+		<div id="logo" class="logo content col-sm-2 logo">
 		</div>
 		<div id="calendar" class="content col-sm-1">
-			Calendar
+			{{ logo_calendar}}
 		</div>
 		<div id="profile" class="content col-sm-8">
 			Profile
 		</div>
 	</div>
+	</div>
+	<div id="a1-view">
+	<div class="row">
+		<div id="project-select" class="col-sm-2">
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+					Personal <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">All Projects</a></li>
+					<li><a href="#">My Projects</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="menu-select" class="col-sm-10">
+			<div class="navbar navbar-inverse" role="navigation">
+		        <div class="collapse navbar-collapse">
+		            <ul class="nav navbar-nav">
+		                <li class="active">
+		                    <a href="#" class="hidden-xs menu-text menu-item">
+		                    <span class="glyphicon glyphicon-dashboard menu-icon-glyphicon">
+		                    </span>
+		                    <div class="menu-text">Home</div>
+		                    </a>
+		                    <a href="#" class="visible-xs  menu-item" data-toggle="collapse" data-target=".navbar-collapse">
+		                    <span class="glyphicons glyphicons-dashboard menu-icon-glyphicon">
+		                    </span><div class="menu-text">Home</div></a>
+		                </li>
+		                <li>
+		                    <a href="#products" class="hidden-xs">Products</a>
+		                    <a href="#products" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Products</a>
+		                </li>
+		                <li>
+		                    <a href="#overview" class="hidden-xs">Overview</a>
+		                    <a href="#overview" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Overview</a>
+		                </li>
+		                <li>
+		                    <a href="#overview" class="hidden-xs">Overview</a>
+		                    <a href="#overview" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Overview</a>
+		                </li>
+		                <li>
+		                    <a href="#overview" class="hidden-xs">Overview</a>
+		                    <a href="#overview" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Overview</a>
+		                </li>
+		                <li>
+		                    <a href="#overview" class="hidden-xs">Overview</a>
+		                    <a href="#overview" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Overview</a>
+		                </li>
+		                <li>
+		                    <a href="#overview" class="hidden-xs">Overview</a>
+		                    <a href="#overview" class="visible-xs" data-toggle="collapse" data-target=".navbar-collapse">Overview</a>
+		                </li>
+		            </ul>
+		        </div><!--/.nav-collapse -->
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="bcd-view" class="bcd-view">
+	<div class="row">
+		<div id="b-view" class="col-sm-2">
+			B View
+		</div>
+		<div id="cd-view" class="col-sm-10">
+			<div id="c-view" class="c-view">
+				C View
+			</div>
+			<div id="d-view" class="d-view">
+				D View
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
 </div>
